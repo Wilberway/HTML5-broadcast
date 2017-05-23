@@ -1,6 +1,6 @@
 # HTML5视频直播技术浅析
 
-[TOC]
+
 
 ## 1.主流技术介绍
 
@@ -12,7 +12,7 @@
 2. HLS（HTTP Live Streaming）
 3. HTTP-FLV（FLV  over HTTP）
 4. MPEG-DASH（HTTP动态自适应流媒体）
-5. MSE（Media Source Extension）
+5. MSE（Media Source Extensions）
 6. WebSocket
 
 ### RTMP
@@ -46,6 +46,10 @@ DASH（Dynamic Adaptive Streaming over HTTP）基于HTTP的动态自适应流媒
 其协议内容比较复杂，并且兼容微软的SmoothStreaming和苹果的HLS。
 
 ### MSE
+
+MSE（Media Source Extensions）是对HTML5音视频相关的拓展协议，让HTML5页面能够更好地控制音频流和视频流。塔不能单独作为一个方案实现，需要其他技术的配合。例如Websocket + MSE或MPEG-DASH+MSE。
+
+MSE（Media Source Extensions）扩展了浏览器的媒体播放功能，提供允许JavaScript 生成媒体流。这可以用于自适应流（adaptive streaming）及随时间变化的视频直播流（live streaming）等应用场景。
 
 
 
